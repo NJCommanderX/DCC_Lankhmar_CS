@@ -761,7 +761,7 @@ div[data-groupname^="repeating_mutations"] .repitem,
 }
 
 .charsheet input.sheet-spelltypeManifestation:checked ~ div.sheet-spell-type-Manifestation,
-.charsheet input.sheet-spelltypeMercurialMagic:checked ~ div.sheet-spell-type-MercurialMagic,
+.charsheet input.sheet-spelltypeStipulation:checked ~ div.sheet-spell-type-Stipulation,
 /*.charsheet input.sheet-spelltypeCorruption:checked ~ div.sheet-spell-type-Corruption,*/
 .charsheet input.sheet-spelltypeDescription:checked ~ div.sheet-spell-type-Description {
 	max-height: 999999px;
@@ -771,7 +771,7 @@ div[data-groupname^="repeating_mutations"] .repitem,
 }
 
 .charsheet input.sheet-spelltypeManifestation:checked ~ span.sheet-spelltypeManifestation,
-.charsheet input.sheet-spelltypeMercurialMagic:checked ~ span.sheet-spelltypeMercurialMagic,
+.charsheet input.sheet-spelltypeStipulation:checked ~ span.sheet-spelltypeStipulation,
 /*.charsheet input.sheet-spelltypeCorruption:checked ~ span.sheet-spelltypeCorruption,*/
 .charsheet input.sheet-spelltypeDescription:checked ~ span.sheet-spelltypeDescription {
     background: #879a6a;     
