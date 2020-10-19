@@ -3,7 +3,7 @@
 
 
 <div class="sheet-overall-wrapper">
-		<div class="sheet-col-1-1 sheet-right sheet-margin-top"><p class="sheet-last-updated">Sheet last updated<br/>05 April 2020</p></div>
+		<div class="sheet-col-1-1 sheet-right sheet-margin-top"><p class="sheet-last-updated">Sheet last updated<br/>18 October 2020</p></div>
 		<div class="sheet-row">
 			<!-- <div class="sheet-col-1-1 sheet-margin-top sheet-center"><img src="http://i.imgur.com/HBgERqb.png" alt="Dungeon Crawl Classics Lankhmar Character Sheet"></div> -->
 			<div class="sheet-col-1-1 sheet-margin-top sheet-center"><img src="https://i.imgur.com/ZdZVS5K.png?1" alt="Dungeon Crawl Classics Lankhmar Character Sheet"></div> 
@@ -32,7 +32,23 @@
 		<div class="sheet-row">
 			<!-- <div class="sheet-col-1-4 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" placeholder="Thieving Path"name="attr_ThievingPath"><br/>Thieving Path</div>
 			<div class="sheet-col-1-8 sheet-center">&nbsp;</div> -->
-			<div class="sheet-col-1-4 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" placeholder="Neighborhood/Quarter" name="attr_Neighborhood"><br/>Neighborhood/Quarter</div>
+			<div class="sheet-col-1-4 sheet-small-label sheet-center" title="Neighborhood/Quater">
+					<select id="Origin" name="attr_Origin" >
+						<option value="----">----</option>
+						<option value="The River Quarter">The River Quarter</option>
+						<option value="The Citadel and the Rainbow Palace">The Citadel and the Rainbow Palace</option>
+						<option value="The Noble Quarter">The Noble Quarter</option>
+						<option value="The Temple Quarter">The Temple Quarter</option>
+						<option value="The Forbidden Temples">The Forbidden Temples</option>
+						<option value="The Crafts Quarter">The Crafts Quarter</option>
+						<option value="Thieves' House">Thieves' House</option>
+						<option value="The Slums">The Slums</option>
+						<option value="Rich Men's Quarter">Rich Men's Quarter</option>
+						<option value="The Carousing Quarter">The Carousing Quarter</option>
+						<option value="Plaza of Dark Delights">Plaza of Dark Delights</option>
+					</select><br/>Neighborhood/Quater
+			</div>
+			<!-- <div class="sheet-col-1-4 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" placeholder="Neighborhood/Quarter" name="attr_Neighborhood"><br/>Neighborhood/Quarter</div> -->
 			<div class="sheet-col-1-8 sheet-center">&nbsp;</div>
 			<div class="sheet-col-1-4 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" placeholder="Hangout" name="attr_Hangout"><br/>Hangout</div>
 			<div class="sheet-col-1-8 sheet-center">&nbsp;</div>
@@ -91,10 +107,12 @@
 								</div>
 
 								<div class="sheet-row">
-									<div class="sheet-col-3-8 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" placeholder="Title" name="attr_Title"><br/>Title</div>
-									<div class="sheet-col-3-8 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" Placeholder="Alignment" name="attr_Alignment"><br/>Alignment</div>
-									<div class="sheet-col-1-8 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" name="attr_Level" value="1"<br/>Level</div>
-									<div class="sheet-col-1-8 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" name="attr_XP" value="10"<br/>XP</div>
+									<!-- <div class="sheet-col-1-24 sheet-center">&nbsp;</div> -->
+									<div class="sheet-col-1-8 sheet-center">&nbsp;</div>
+									<!-- <div class="sheet-col-3-8 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" placeholder="Title" name="attr_Title"><br/>Title</div> -->
+									<!-- <div class="sheet-col-3-8 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" Placeholder="Alignment" name="attr_Alignment"><br/>Alignment</div> -->
+									<div class="sheet-col-3-8 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" name="attr_Level" value="1"<br/>Level</div>
+									<div class="sheet-col-3-8 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text" name="attr_XP" value="10"<br/>XP</div>
 								</div>
 
 								<div class="sheet-col-1-1 sheet-center">&nbsp;</div>
@@ -4821,6 +4839,16 @@
 						<div class="sheet-wizard">
 							<h3>Wizard Abilities</h3>
 
+								<div class="sheet-col-1-8 sheet-right sheet-padr sheet-hd-row">Spell Path</br></div>
+									<div class="sheet-col-1-10 sheet-right">
+										<select name="attr_SPath" >
+											<option value="----">----</option>
+											<option value="White">White</option>
+											<option value="Black">Black</option>
+										</select><br/>
+									</div>
+								</div>
+								<div class="sheet-col-1-1 sheet-center">&nbsp;</div>
 								<div class="sheet-row">
 									<div class="sheet-col-1-8 sheet-right sheet-padr sheet-hd-row">Secret Doors<br/></div>
 									<div class="sheet-col-1-14 sheet-small-label sheet-center" Title="Add Misc bonus here"><input class="sheet-underlined" type="number" name="attr_secretDoorsCheckMisc" value="0"><br/>Misc Bonus</div>
