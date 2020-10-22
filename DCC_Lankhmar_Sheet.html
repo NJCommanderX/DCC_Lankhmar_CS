@@ -5010,7 +5010,7 @@
 
 				<div class="sheet-section-weapons">
 
-					<div class="sheet-col-1-6 sheet-center">&nbsp;</div>
+					<div class="sheet-col-1-14 sheet-center">&nbsp;</div>
 
 					<div class="sheet-col-1-6 sheet-center">
 						<button type="roll" class="sheet-roll" name="roll_DeedDie"
@@ -5019,19 +5019,19 @@
 
 					<div class="sheet-col-1-14 sheet-center">&nbsp;</div>
 
-					<div class="sheet-col-1-6 sheet-center">
+					<!-- <div class="sheet-col-1-6 sheet-center">
 						<button type="roll" class="sheet-roll" name="roll_DeedDie"
 						value="&{template:DccTabbed} {{background=[[0]]}} {{combat=1}} {{name=@{character_name}}} {{title=Mighty Deed of @{RangerPath}}} {{flavortext=Add this bonus to Attack and Damage roll.}} {{rolltype=Deed Die : }} {{deeddie=[[ @{DeedDie}cs>3 [Die Roll] ]] }} {{successtext=You accomplish a Mighty Deed (if attack roll also hits)!}}" >Ranger Deed Die</button>
-					</div>
+					</div> -->
 
-					<div class="sheet-col-1-14 sheet-center">&nbsp;</div>
+					<!-- <div class="sheet-col-1-14 sheet-center">&nbsp;</div>
 					
 					<div class="sheet-col-1-6 sheet-center">
 						<button type="roll" class="sheet-roll" name="roll_smiteDie"
 						value="&{template:DccTabbed} {{background=[[0]]}} {{combat=1}} {{name=@{character_name}}} {{title=Smite}} {{flavortext=Add this bonus to Attack and Damage rolls against those Unholy to }} {{rolltype=Smite : }} {{deity=@{ClericDeity} }} {{smite=[[ @{smiteDie} [Die Roll] ]]  }}" >Smite</button>
 					</div>
 
-					<div class="sheet-col-1-1 sheet-center">&nbsp;</div>
+					<div class="sheet-col-1-1 sheet-center">&nbsp;</div> -->
 					
 					<!-- BEGIN AUTO GENERATED WEAPON SECTION -->
 					<h4 class="sheet-center">Melee Weapons </h4>
@@ -5498,7 +5498,7 @@
 
 													<div class="sheet-col-11-23 sheet-vert-middle sheet-left">
 														<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_spellCheckSingleDie" title="The first time you attempt to cast this spell - Roll for your Stipulation Effect."
-															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowmercurial=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spellcheckwizard=[[@{spellCheckDie} + [[@{spellUserBonus}]] [Level/Stat Bonus] + [[@{spellCastLuckyRoll}]] [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + ([[@{armorCheck}]]) [Armor Check Penalty] + @{arcaneMod} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Spell Check</button>
+															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowstipulation=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spellcheckwizard=[[@{spellCheckDie} + [[@{spellUserBonus}]] [Level/Stat Bonus] + [[@{spellCastLuckyRoll}]] [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + ([[@{armorCheck}]]) [Armor Check Penalty] + @{arcaneMod} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Spell Check</button>
 													</div>
 
 												</div>
@@ -5538,8 +5538,8 @@
 							                        <div class="sheet-col-1-23 sheet-vert-bottom sheet-center">&nbsp;</div>
 
 													<div class="sheet-col-11-23 sheet-vert-middle sheet-left">
-														<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_spellCheckMultiDie" title="The first time you attempt to cast this spell - Roll for your Mercurial Magic Effect."
-															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellcheckwizardmulti=1}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowmercurial=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spelldie1=[[@{spellCheckMultiDie}]]}} {{spelldie2=[[@{spellCheckMultiDie}]]}} {{spellbonus=[[@{spellUserBonus}[Level/Stat Bonus] + @{spellCastLuckyRoll} [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + @{armorCheck} [Armor Check Penalty] + @{arcaneModMulti} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Multi-Die Spell Check</button>
+														<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_spellCheckMultiDie" title="The first time you attempt to cast this spell - Roll for your Stipulation Effect."
+															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellcheckwizardmulti=1}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowstipulation=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spelldie1=[[@{spellCheckMultiDie}]]}} {{spelldie2=[[@{spellCheckMultiDie}]]}} {{spellbonus=[[@{spellUserBonus}[Level/Stat Bonus] + @{spellCastLuckyRoll} [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + @{armorCheck} [Armor Check Penalty] + @{arcaneModMulti} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Multi-Die Spell Check</button>
 													</div>
 												</div>
 											</div>
@@ -5549,7 +5549,7 @@
 										
 										<span class="sheet-spacer"></span>
 										<span class="sheet-small-label">Show :</span>
-										<input type="checkbox" name="attr_spellTypeStipulation" class="sheet-spelltypetab sheet-spelltypeStipulation" value="1" checked="checked"/><span class="sheet-spelltypetab sheet-spelltypeStipulation">Mercurial Magic</span> |
+										<input type="checkbox" name="attr_spellTypeStipulation" class="sheet-spelltypetab sheet-spelltypeStipulation" value="1" checked="checked"/><span class="sheet-spelltypetab sheet-spelltypeStipulation">Stipulation Magic</span> |
 										<input type="checkbox" name="attr_spellTypeManifestation" class="sheet-spelltypetab sheet-spelltypeManifestation" value="1"/><span class="sheet-spelltypetab sheet-spelltypeManifestation">Manifestation</span> |
 										<input type="checkbox" name="attr_spellTypeDescription" class="sheet-spelltypetab sheet-spelltypeDescription" value="1"/><span class="sheet-spelltypetab sheet-spelltypeDescription">Description</span>
 										<span class="sheet-spacer"></span>
@@ -5569,7 +5569,7 @@
 												<input type="hidden" name="attr_StipulationLuckBonus" value="[[([[@{luckMod}]] * (10))]]" />
 												<div class="sheet-col-11-23 sheet-vert-middle sheet-left">
 													<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_StipulationMagic" title="The first time you attempt to cast this spell - Roll for your Stipulation Effect."
-													value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=Mercurial Magic for @{spellName}}} {{flavortext=Enter your mercurial effect text into the approrpiate box on your spellcard.}} {{rolltype=Stipulation Effect : }} {{spellstipulation=[[ {({(1d100 + @{stipulationLuckBonus}),1d1}kh1),0d1+100}kl1 ]]  }}" >Stipulation Roll</button>
+													value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=Stipulation Magic for @{spellName}}} {{flavortext=Enter your stipulation effect text into the approrpiate box on your spellcard.}} {{rolltype=Stipulation Effect : }} {{spellstipulation=[[ {({(1d100 + @{stipulationLuckBonus}),1d1}kh1),0d1+100}kl1 ]]  }}" >Stipulation Roll</button>
 												</div>
 											</div>
 										</div>
@@ -5765,7 +5765,7 @@
 
 													<div class="sheet-col-11-23 sheet-vert-middle sheet-left">
 														<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_spellCheckSingleDie" title="The first time you attempt to cast this spell - Roll for your Stipulation Effect."
-															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowmercurial=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spellcheckwizard=[[@{spellCheckDie} + [[@{spellUserBonus}]] [Level/Stat Bonus] + [[@{spellCastLuckyRoll}]] [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + ([[@{armorCheck}]]) [Armor Check Penalty] + @{arcaneMod} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Spell Check</button>
+															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowstipulation=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spellcheckwizard=[[@{spellCheckDie} + [[@{spellUserBonus}]] [Level/Stat Bonus] + [[@{spellCastLuckyRoll}]] [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + ([[@{armorCheck}]]) [Armor Check Penalty] + @{arcaneMod} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Spell Check</button>
 													</div>
 
 												</div>
@@ -5805,8 +5805,8 @@
 							                        <div class="sheet-col-1-23 sheet-vert-bottom sheet-center">&nbsp;</div>
 
 													<div class="sheet-col-11-23 sheet-vert-middle sheet-left">
-														<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_spellCheckMultiDie" title="The first time you attempt to cast this spell - Roll for your Mercurial Magic Effect."
-															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellcheckwizardmulti=1}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowmercurial=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spelldie1=[[@{spellCheckMultiDie}]]}} {{spelldie2=[[@{spellCheckMultiDie}]]}} {{spellbonus=[[@{spellUserBonus}[Level/Stat Bonus] + @{spellCastLuckyRoll} [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + @{armorCheck} [Armor Check Penalty] + @{arcaneModMulti} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Multi-Die Spell Check</button>
+														<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_spellCheckMultiDie" title="The first time you attempt to cast this spell - Roll for your Stipulation Magic Effect."
+															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellcheckwizardmulti=1}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowstipulation=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spelldie1=[[@{spellCheckMultiDie}]]}} {{spelldie2=[[@{spellCheckMultiDie}]]}} {{spellbonus=[[@{spellUserBonus}[Level/Stat Bonus] + @{spellCastLuckyRoll} [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + @{armorCheck} [Armor Check Penalty] + @{arcaneModMulti} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Multi-Die Spell Check</button>
 													</div>
 												</div>
 											</div>
@@ -5816,7 +5816,7 @@
 										
 										<span class="sheet-spacer"></span>
 										<span class="sheet-small-label">Show :</span>
-										<input type="checkbox" name="attr_spellTypeStipulation" class="sheet-spelltypetab sheet-spelltypeStipulation" value="1" checked="checked"/><span class="sheet-spelltypetab sheet-spelltypeStipulation">Mercurial Magic</span> |
+										<input type="checkbox" name="attr_spellTypeStipulation" class="sheet-spelltypetab sheet-spelltypeStipulation" value="1" checked="checked"/><span class="sheet-spelltypetab sheet-spelltypeStipulation">Stipulation Magic</span> |
 										<input type="checkbox" name="attr_spellTypeManifestation" class="sheet-spelltypetab sheet-spelltypeManifestation" value="1"/><span class="sheet-spelltypetab sheet-spelltypeManifestation">Manifestation</span> |
 										<input type="checkbox" name="attr_spellTypeDescription" class="sheet-spelltypetab sheet-spelltypeDescription" value="1"/><span class="sheet-spelltypetab sheet-spelltypeDescription">Description</span>
 										<span class="sheet-spacer"></span>
@@ -5836,7 +5836,7 @@
 												<input type="hidden" name="attr_StipulationLuckBonus" value="[[([[@{luckMod}]] * (10))]]" />
 												<div class="sheet-col-11-23 sheet-vert-middle sheet-left">
 													<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_StipulationMagic" title="The first time you attempt to cast this spell - Roll for your Stipulation Effect."
-													value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=Mercurial Magic for @{spellName}}} {{flavortext=Enter your mercurial effect text into the approrpiate box on your spellcard.}} {{rolltype=Stipulation Effect : }} {{spellstipulation=[[ {({(1d100 + @{stipulationLuckBonus}),1d1}kh1),0d1+100}kl1 ]]  }}" >Stipulation Roll</button>
+													value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=Stipulation Magic for @{spellName}}} {{flavortext=Enter your stipulation effect text into the approrpiate box on your spellcard.}} {{rolltype=Stipulation Effect : }} {{spellstipulation=[[ {({(1d100 + @{stipulationLuckBonus}),1d1}kh1),0d1+100}kl1 ]]  }}" >Stipulation Roll</button>
 												</div>
 											</div>
 										</div>
@@ -6032,7 +6032,7 @@
 
 													<div class="sheet-col-11-23 sheet-vert-middle sheet-left">
 														<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_spellCheckSingleDie" title="The first time you attempt to cast this spell - Roll for your Stipulation Effect."
-															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowmercurial=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spellcheckwizard=[[@{spellCheckDie} + [[@{spellUserBonus}]] [Level/Stat Bonus] + [[@{spellCastLuckyRoll}]] [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + ([[@{armorCheck}]]) [Armor Check Penalty] + @{arcaneMod} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Spell Check</button>
+															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowstipulation=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spellcheckwizard=[[@{spellCheckDie} + [[@{spellUserBonus}]] [Level/Stat Bonus] + [[@{spellCastLuckyRoll}]] [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + ([[@{armorCheck}]]) [Armor Check Penalty] + @{arcaneMod} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Spell Check</button>
 													</div>
 
 												</div>
@@ -6072,8 +6072,8 @@
 							                        <div class="sheet-col-1-23 sheet-vert-bottom sheet-center">&nbsp;</div>
 
 													<div class="sheet-col-11-23 sheet-vert-middle sheet-left">
-														<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_spellCheckMultiDie" title="The first time you attempt to cast this spell - Roll for your Mercurial Magic Effect."
-															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellcheckwizardmulti=1}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowmercurial=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spelldie1=[[@{spellCheckMultiDie}]]}} {{spelldie2=[[@{spellCheckMultiDie}]]}} {{spellbonus=[[@{spellUserBonus}[Level/Stat Bonus] + @{spellCastLuckyRoll} [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + @{armorCheck} [Armor Check Penalty] + @{arcaneModMulti} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Multi-Die Spell Check</button>
+														<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_spellCheckMultiDie" title="The first time you attempt to cast this spell - Roll for your Stipulation Magic Effect."
+															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellcheckwizardmulti=1}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowstipulation=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spelldie1=[[@{spellCheckMultiDie}]]}} {{spelldie2=[[@{spellCheckMultiDie}]]}} {{spellbonus=[[@{spellUserBonus}[Level/Stat Bonus] + @{spellCastLuckyRoll} [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + @{armorCheck} [Armor Check Penalty] + @{arcaneModMulti} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Multi-Die Spell Check</button>
 													</div>
 												</div>
 											</div>
@@ -6083,7 +6083,7 @@
 										
 										<span class="sheet-spacer"></span>
 										<span class="sheet-small-label">Show :</span>
-										<input type="checkbox" name="attr_spellTypeStipulation" class="sheet-spelltypetab sheet-spelltypeStipulation" value="1" checked="checked"/><span class="sheet-spelltypetab sheet-spelltypeStipulation">Mercurial Magic</span> |
+										<input type="checkbox" name="attr_spellTypeStipulation" class="sheet-spelltypetab sheet-spelltypeStipulation" value="1" checked="checked"/><span class="sheet-spelltypetab sheet-spelltypeStipulation">Stipulation Magic</span> |
 										<input type="checkbox" name="attr_spellTypeManifestation" class="sheet-spelltypetab sheet-spelltypeManifestation" value="1"/><span class="sheet-spelltypetab sheet-spelltypeManifestation">Manifestation</span> |
 										<input type="checkbox" name="attr_spellTypeDescription" class="sheet-spelltypetab sheet-spelltypeDescription" value="1"/><span class="sheet-spelltypetab sheet-spelltypeDescription">Description</span>
 										<span class="sheet-spacer"></span>
@@ -6103,7 +6103,7 @@
 												<input type="hidden" name="attr_StipulationLuckBonus" value="[[([[@{luckMod}]] * (10))]]" />
 												<div class="sheet-col-11-23 sheet-vert-middle sheet-left">
 													<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_StipulationMagic" title="The first time you attempt to cast this spell - Roll for your Stipulation Effect."
-													value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=Mercurial Magic for @{spellName}}} {{flavortext=Enter your mercurial effect text into the approrpiate box on your spellcard.}} {{rolltype=Stipulation Effect : }} {{spellstipulation=[[ {({(1d100 + @{stipulationLuckBonus}),1d1}kh1),0d1+100}kl1 ]]  }}" >Stipulation Roll</button>
+													value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=Stipulation Magic for @{spellName}}} {{flavortext=Enter your stipulation effect text into the approrpiate box on your spellcard.}} {{rolltype=Stipulation Effect : }} {{spellstipulation=[[ {({(1d100 + @{stipulationLuckBonus}),1d1}kh1),0d1+100}kl1 ]]  }}" >Stipulation Roll</button>
 												</div>
 											</div>
 										</div>
@@ -6298,7 +6298,7 @@
 
 													<div class="sheet-col-11-23 sheet-vert-middle sheet-left">
 														<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_spellCheckSingleDie" title="The first time you attempt to cast this spell - Roll for your Stipulation Effect."
-															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowmercurial=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spellcheckwizard=[[@{spellCheckDie} + [[@{spellUserBonus}]] [Level/Stat Bonus] + [[@{spellCastLuckyRoll}]] [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + ([[@{armorCheck}]]) [Armor Check Penalty] + @{arcaneMod} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Spell Check</button>
+															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowstipulation=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spellcheckwizard=[[@{spellCheckDie} + [[@{spellUserBonus}]] [Level/Stat Bonus] + [[@{spellCastLuckyRoll}]] [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + ([[@{armorCheck}]]) [Armor Check Penalty] + @{arcaneMod} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Spell Check</button>
 													</div>
 
 												</div>
@@ -6338,8 +6338,8 @@
 							                        <div class="sheet-col-1-23 sheet-vert-bottom sheet-center">&nbsp;</div>
 
 													<div class="sheet-col-11-23 sheet-vert-middle sheet-left">
-														<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_spellCheckMultiDie" title="The first time you attempt to cast this spell - Roll for your Mercurial Magic Effect."
-															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellcheckwizardmulti=1}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowmercurial=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spelldie1=[[@{spellCheckMultiDie}]]}} {{spelldie2=[[@{spellCheckMultiDie}]]}} {{spellbonus=[[@{spellUserBonus}[Level/Stat Bonus] + @{spellCastLuckyRoll} [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + @{armorCheck} [Armor Check Penalty] + @{arcaneModMulti} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Multi-Die Spell Check</button>
+														<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_spellCheckMultiDie" title="The first time you attempt to cast this spell - Roll for your Stipulation Magic Effect."
+															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellcheckwizardmulti=1}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowstipulation=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spelldie1=[[@{spellCheckMultiDie}]]}} {{spelldie2=[[@{spellCheckMultiDie}]]}} {{spellbonus=[[@{spellUserBonus}[Level/Stat Bonus] + @{spellCastLuckyRoll} [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + @{armorCheck} [Armor Check Penalty] + @{arcaneModMulti} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Multi-Die Spell Check</button>
 													</div>
 												</div>
 											</div>
@@ -6349,7 +6349,7 @@
 										
 										<span class="sheet-spacer"></span>
 										<span class="sheet-small-label">Show :</span>
-										<input type="checkbox" name="attr_spellTypeStipulation" class="sheet-spelltypetab sheet-spelltypeStipulation" value="1" checked="checked"/><span class="sheet-spelltypetab sheet-spelltypeStipulation">Mercurial Magic</span> |
+										<input type="checkbox" name="attr_spellTypeStipulation" class="sheet-spelltypetab sheet-spelltypeStipulation" value="1" checked="checked"/><span class="sheet-spelltypetab sheet-spelltypeStipulation">Stipulation Magic</span> |
 										<input type="checkbox" name="attr_spellTypeManifestation" class="sheet-spelltypetab sheet-spelltypeManifestation" value="1"/><span class="sheet-spelltypetab sheet-spelltypeManifestation">Manifestation</span> |
 										<input type="checkbox" name="attr_spellTypeDescription" class="sheet-spelltypetab sheet-spelltypeDescription" value="1"/><span class="sheet-spelltypetab sheet-spelltypeDescription">Description</span>
 										<span class="sheet-spacer"></span>
@@ -6369,7 +6369,7 @@
 												<input type="hidden" name="attr_StipulationLuckBonus" value="[[([[@{luckMod}]] * (10))]]" />
 												<div class="sheet-col-11-23 sheet-vert-middle sheet-left">
 													<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_StipulationMagic" title="The first time you attempt to cast this spell - Roll for your Stipulation Effect."
-													value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=Mercurial Magic for @{spellName}}} {{flavortext=Enter your mercurial effect text into the approrpiate box on your spellcard.}} {{rolltype=Stipulation Effect : }} {{spellstipulation=[[ {({(1d100 + @{stipulationLuckBonus}),1d1}kh1),0d1+100}kl1 ]]  }}" >Stipulation Roll</button>
+													value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=Stipulation Magic for @{spellName}}} {{flavortext=Enter your stipulation effect text into the approrpiate box on your spellcard.}} {{rolltype=Stipulation Effect : }} {{spellstipulation=[[ {({(1d100 + @{stipulationLuckBonus}),1d1}kh1),0d1+100}kl1 ]]  }}" >Stipulation Roll</button>
 												</div>
 											</div>
 										</div>
@@ -6564,7 +6564,7 @@
 
 													<div class="sheet-col-11-23 sheet-vert-middle sheet-left">
 														<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_spellCheckSingleDie" title="The first time you attempt to cast this spell - Roll for your Stipulation Effect."
-															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowmercurial=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spellcheckwizard=[[@{spellCheckDie} + [[@{spellUserBonus}]] [Level/Stat Bonus] + [[@{spellCastLuckyRoll}]] [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + ([[@{armorCheck}]]) [Armor Check Penalty] + @{arcaneMod} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Spell Check</button>
+															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowstipulation=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spellcheckwizard=[[@{spellCheckDie} + [[@{spellUserBonus}]] [Level/Stat Bonus] + [[@{spellCastLuckyRoll}]] [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + ([[@{armorCheck}]]) [Armor Check Penalty] + @{arcaneMod} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Spell Check</button>
 													</div>
 
 												</div>
@@ -6604,8 +6604,8 @@
 							                        <div class="sheet-col-1-23 sheet-vert-bottom sheet-center">&nbsp;</div>
 
 													<div class="sheet-col-11-23 sheet-vert-middle sheet-left">
-														<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_spellCheckMultiDie" title="The first time you attempt to cast this spell - Roll for your Mercurial Magic Effect."
-															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellcheckwizardmulti=1}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowmercurial=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spelldie1=[[@{spellCheckMultiDie}]]}} {{spelldie2=[[@{spellCheckMultiDie}]]}} {{spellbonus=[[@{spellUserBonus}[Level/Stat Bonus] + @{spellCastLuckyRoll} [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + @{armorCheck} [Armor Check Penalty] + @{arcaneModMulti} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Multi-Die Spell Check</button>
+														<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_spellCheckMultiDie" title="The first time you attempt to cast this spell - Roll for your Stipulation Magic Effect."
+															value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=@{spellName}}} {{spellcheckwizardmulti=1}} {{spellshowmanifest=@{spellManifestation}}} {{spellshowinfoblock=1}} {{spelllevel=@{spellBaseLevel}}} {{spellrange=@{spellRange}}} {{spellduration=@{spellDuration}}} {{spellcasttime=@{spellCastTime}}} {{spellsave=@{spellSave}}} {{spellconcentrate=@{spellConc}}} {{spellshowdesc=@{spellDescription}}} {{spellshowstipulation=@{spellstipulationMagic}}} {{rolltype=Spell Check : }} {{spelldie1=[[@{spellCheckMultiDie}]]}} {{spelldie2=[[@{spellCheckMultiDie}]]}} {{spellbonus=[[@{spellUserBonus}[Level/Stat Bonus] + @{spellCastLuckyRoll} [Casting Lucky Roll] + (?{Amount of Spellburn|0}) [Spellburn] + @{armorCheck} [Armor Check Penalty] + @{arcaneModMulti} [Bonus/Minus] ]]  }} {{crit= Add an additional +@{Level} to your spell check roll!}} {{fumble=[[1d6 + (@{spellFumbleCheck} [Luck] + @{spellFumbleLuckyRoll} [Fumble Lucky Roll]) ]] }}" >Multi-Die Spell Check</button>
 													</div>
 												</div>
 											</div>
@@ -6615,7 +6615,7 @@
 										
 										<span class="sheet-spacer"></span>
 										<span class="sheet-small-label">Show :</span>
-										<input type="checkbox" name="attr_spellTypeStipulation" class="sheet-spelltypetab sheet-spelltypeStipulation" value="1" checked="checked"/><span class="sheet-spelltypetab sheet-spelltypeStipulation">Mercurial Magic</span> |
+										<input type="checkbox" name="attr_spellTypeStipulation" class="sheet-spelltypetab sheet-spelltypeStipulation" value="1" checked="checked"/><span class="sheet-spelltypetab sheet-spelltypeStipulation">Stipulation Magic</span> |
 										<input type="checkbox" name="attr_spellTypeManifestation" class="sheet-spelltypetab sheet-spelltypeManifestation" value="1"/><span class="sheet-spelltypetab sheet-spelltypeManifestation">Manifestation</span> |
 										<input type="checkbox" name="attr_spellTypeDescription" class="sheet-spelltypetab sheet-spelltypeDescription" value="1"/><span class="sheet-spelltypetab sheet-spelltypeDescription">Description</span>
 										<span class="sheet-spacer"></span>
@@ -6635,7 +6635,7 @@
 												<input type="hidden" name="attr_StipulationLuckBonus" value="[[([[@{luckMod}]] * (10))]]" />
 												<div class="sheet-col-11-23 sheet-vert-middle sheet-left">
 													<button type="roll" class="sheet-roll sheet-vert-middle" name="roll_StipulationMagic" title="The first time you attempt to cast this spell - Roll for your Stipulation Effect."
-													value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=Mercurial Magic for @{spellName}}} {{flavortext=Enter your mercurial effect text into the approrpiate box on your spellcard.}} {{rolltype=Stipulation Effect : }} {{spellstipulation=[[ {({(1d100 + @{stipulationLuckBonus}),1d1}kh1),0d1+100}kl1 ]]  }}" >Stipulation Roll</button>
+													value="&{template:DccTabbed} {{background=[[1d3]]}} {{spell=1}} {{name=@{character_name}}} {{title=Stipulation Magic for @{spellName}}} {{flavortext=Enter your stipulation effect text into the approrpiate box on your spellcard.}} {{rolltype=Stipulation Effect : }} {{spellstipulation=[[ {({(1d100 + @{stipulationLuckBonus}),1d1}kh1),0d1+100}kl1 ]]  }}" >Stipulation Roll</button>
 												</div>
 											</div>
 										</div>
@@ -6737,8 +6737,6 @@
 								<!-- END spell row -->	
 								</fieldset>
 
-
-							</div>
 							<!-- END spell page -->				
 
 							<!-- END AUTO GENERATED SPELL PAGES -->
@@ -7395,6 +7393,12 @@
 						</div>
 					</div>
 
+					<!-- <div class="sheet-col-1-1 sheet-center">&nbsp;</div>
+
+						<div class="sheet-col-1_7 sheet-left sheet-center">Do you have advanced combat training (i.e. martial Training benison)?</div>
+						<div class="sheet-col-1-20 sheet-left sheet-padr sheet-checkbox-row sheet-vert-middle" title="Check the box if you have advanced combat training."><input type="checkbox" value="2" name="attr_is_adv_combat">
+					</div> -->
+
 					<div class="sheet-row sheet-padb">
 
 						<div class="sheet-col-1-7 sheet-right sheet-small-label">&nbsp;</div>
@@ -7484,7 +7488,7 @@
 							<div class="sheet-row">
 								<div class="sheet-col-1">
 									<h4 class="sheet-center">Coin Carried </h4> 
-									<p class="sheet-small-note">Total = value of all coins converted to GP</p>
+									<p class="sheet-small-note">Total = value of all coins converted to GR (Gold Rilk)</p>
 								</div>
 							</div>
 
@@ -7492,22 +7496,24 @@
 						
 								<div class="sheet-col-1-1 sheet-padr">
 						
-									<div class="sheet-row sheet-sub-header">	
-										<div class="sheet-col-1-6 sheet-center sheet-small-label">CP</div>
-										<div class="sheet-col-1-6 sheet-center sheet-small-label">SP</div>
-										<div class="sheet-col-1-6 sheet-center sheet-small-label">GP</div>
-										<div class="sheet-col-1-6 sheet-center sheet-small-label">EP</div>
-										<div class="sheet-col-1-6 sheet-center sheet-small-label">PP</div>
-										<div class="sheet-col-1-6 sheet-center sheet-small-label">Total</div>
+									<div class="sheet-row sheet-sub-header">
+										<div class="sheet-col-1-7 sheet-center sheet-small-label">IT</div>	
+										<div class="sheet-col-1-7 sheet-center sheet-small-label">BA</div>
+										<div class="sheet-col-1-7 sheet-center sheet-small-label">CP</div>
+										<div class="sheet-col-1-7 sheet-center sheet-small-label">SS</div>
+										<div class="sheet-col-1-7 sheet-center sheet-small-label">GR</div>
+										<div class="sheet-col-1-7 sheet-center sheet-small-label">DG</div>
+										<div class="sheet-col-1-7 sheet-center sheet-small-label">Total</div>
 									</div>
 							
 									<div class="sheet-row">	
-										<div class="sheet-col-1-6" title="Copper Pieces"><input type="number" name="attr_CP" value="0" min="0" step="1"></div>
-										<div class="sheet-col-1-6" title="Silver Pieces"><input type="number" name="attr_SP" value="0" min="0" step="1"></div>
-										<div class="sheet-col-1-6" title="Gold Pieces"><input type="number" name="attr_GP" value="0" min="0" step="1"></div>
-										<div class="sheet-col-1-6" title="Electrum Pieces"><input type="number" name="attr_EP" value="0" min="0" step="1"></div>
-										<div class="sheet-col-1-6" title="Platinum Pieces"><input type="number" name="attr_PP" value="0" min="0" step="1"></div>
-										<div class="sheet-col-1-6" title="Total (in Gold Pieces)"><input class="sheet-center" type="number" name="attr_moneyTotalGp" value="(@{CP} / 100) + (@{SP} / 10) + @{GP} + (@{EP} * 10) + (@{PP} * 100) " disabled="disabled"></div>
+										<div class="sheet-col-1-7" title="Iron Tik (i.t.)"><input type="number" name="attr_IT" value="0" min="0" step="1"></div>
+										<div class="sheet-col-1-7" title="Bronze Agol (b.a.)"><input type="number" name="attr_BA" value="0" min="0" step="1"></div>
+										<div class="sheet-col-1-7" title="Copper Penny (c.p.)"><input type="number" name="attr_CP" value="0" min="0" step="1"></div>
+										<div class="sheet-col-1-7" title="Silver Smerduk (s.s)"><input type="number" name="attr_SS" value="0" min="0" step="1"></div>
+										<div class="sheet-col-1-7" title="Gold Rilk (g.r.)"><input type="number" name="attr_GR" value="0" min="0" step="1"></div>
+										<div class="sheet-col-1-7" title="Diamond-In-Amber Glulditch (d.g.)"><input type="number" name="attr_DG" value="0" min="0" step="1"></div>
+										<div class="sheet-col-1-7" title="Total (in Gold Pieces)"><input class="sheet-center" type="number" name="attr_moneyTotalGR" value="(@{IT} / 1000) + (@{BA} / 500) + (@{CP} / 100) + (@{SS} / 10) + @{GR} + (@{DG} * 100) " disabled="disabled"></div>
 									</div>
 						
 								</div>
@@ -9843,12 +9849,12 @@
 									
 								</div>
 							{{/spellshowinfoblock}}
-							{{#spellshowmercurial}}	
+							{{#spellshowstipulation}}	
 								<div class="sheet-row">
-									<div class="sheet-col-1 sheet-padl sheet-padr sheet-RollTemp-key">Mercurial Effect</div>
-									<div class="sheet-col-1 sheet-padl sheet-padr sheet-RollTemp-textbox">{{spellshowmercurial}}</div>
+									<div class="sheet-col-1 sheet-padl sheet-padr sheet-RollTemp-key">Stipulation Effect</div>
+									<div class="sheet-col-1 sheet-padl sheet-padr sheet-RollTemp-textbox">{{spellshowstipulation}}</div>
 								</div>
-							{{/spellshowmercurial}}
+							{{/spellshowstipulation}}
 							{{#spellshowdesc}}	
 								<div class="sheet-row">
 									<div class="sheet-col-1 sheet-padl sheet-padr sheet-RollTemp-key">Spell Description</div>
@@ -9911,12 +9917,12 @@
 									
 								</div>
 							{{/spellshowinfoblock}}
-							{{#spellshowmercurial}}	
+							{{#spellshowstipulation}}	
 								<div class="sheet-row">
-									<div class="sheet-col-1 sheet-padl sheet-padr sheet-RollTemp-key">Mercurial Effect</div>
-									<div class="sheet-col-1 sheet-padl sheet-padr sheet-RollTemp-textbox">{{spellshowmercurial}}</div>
+									<div class="sheet-col-1 sheet-padl sheet-padr sheet-RollTemp-key">Stipulation Effect</div>
+									<div class="sheet-col-1 sheet-padl sheet-padr sheet-RollTemp-textbox">{{spellshowstipulation}}</div>
 								</div>
-							{{/spellshowmercurial}}
+							{{/spellshowstipulation}}
 							{{#spellshowdesc}}	
 								<div class="sheet-row">
 									<div class="sheet-col-1 sheet-padl sheet-padr sheet-RollTemp-key">Spell Description</div>

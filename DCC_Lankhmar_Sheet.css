@@ -1961,6 +1961,15 @@ div[data-groupname^="repeating_mutations"] .repitem,
     display: block;
 }
 
+.charsheet div.sheet-adv_combat_no,  div.sheet-adv_combat {     
+    display: none;
+}
+
+.charsheet  input.sheet-is-adv_combat:checked ~ div.sheet-adv_combat,
+            input.sheet-is-adv_combat:not(:checked )~ div.sheet-adv_combat  {
+    display: block;
+}
+
 /*.charsheet span.sheet-spellcheckboxTXT::before {
                 content: "Check this box if you need to use multiple dice to roll your spell check (for example: if you have the Joe Average mercurial effect).";
 }
